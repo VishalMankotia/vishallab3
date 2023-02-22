@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- include script .js file -->
+    <script src="script.js"></script>
+    <!-- include the css file -->
+    <link rel="stylesheet" href="style.css">
+    <title>Vishal Singh</title>
+</head>
+<body>
+  
+    <form action="backend.php" id="registration">
+       <!-- Make the h1 tag as bold
+     -->
+    <h1>Registration Form</h1>
+    
+
+     
+     
+        <p>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" />
+        </p>
+    
+        <p>
+            <label for="password1">Password:</label>
+            <input type="password" id="password1" name="password1" />
+        </p>
+    
+        <!-- <p>
+            <label for="password2">Confirm Password:</label>
+            <input type="password" id="password2" name="password2" />
+        </p> -->
+        <p>
+            <label for="mobile">Mobile :</label>
+            <input type="number" id="mobile" name="password2" />
+        </p>
+    
+        <p>
+            <label for="myDate">Choose Date:</label>
+            <input type="date" id="myDate" name="gender"    />
+             
+        </p>
+       
+        <span >
+     Gender:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Male:    <input type="radio" id="genderM" name="gender" value="male"  />
+            
+        
+         Female:    <input type="radio" id="genderM" name="gender" value="female" />
+            
+        </span>
+    
+        <p>
+            <label for="continent">Your Continent</label>
+            <select name="continent" id="continent">
+                <option value="">Choose Your Country</option>
+                <option value="africa" selected>India</option>
+                <option value="northamerica">China</option>
+                <option value="southamerica">Pakistan</option>
+                <option value="antarctica">Bangladesh</option>
+                <option value="asia">Sri Lanka</option>
+                <option value="australia">Australia</option>
+                <option value="europe">Russia</option>
+            </select>
+        </p>
+    
+        <p>
+            <label for="desc">Describe yourself</label>
+            <textarea name="description" id="desc" cols="30" rows="10"></textarea>
+        </p>
+    <p>
+            <label for="file">Upload your file</label>
+            <input type="file" id="file" name="file" />
+        </p>
+        <p>
+            <input type="checkbox" id="terms" name="terms" />
+            <label for="terms">I agree to the terms and conditions <sup>*</sup></label>
+    </p>
+        <p>
+            <button type="submit" id="register">Register!</button>
+        </p>
+    
+    </form>
+    
+    <div id="errorMessages"></div>
+</body>
+</html>
